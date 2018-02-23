@@ -36,7 +36,8 @@ while(1):
     time.sleep(.1)
 
     payload = joyDict
-    status = requests.get('http://10.1.41.10/drive/',params=payload)
+    #status = requests.get('http://10.1.41.10/drive/',params=payload)
+    status = requests.get('http://192.168.1.8/drive/',params=payload)
     for x in range (0, len(status.text)):
             if status.text[x].isdigit():
                senValues[senIndex] += status.text[x]
