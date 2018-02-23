@@ -1,0 +1,125 @@
+----- Forwarded message from Lenni Armstrong <informmotion@comcast.net> -----
+
+Date: Wed, 19 Feb 2014 10:47:28 -0500
+To: Sam Christy <sam@machinescience.org>
+
+Hi Sam,
+
+I assume that your numbers are "pounds of CO2" is that right?
+
+I'm checking your numbers with David MacKay's book "Sustainable Energy without the Hot Air".
+
+Here's the numbers I find:
+For 10 incandescent lights - 5 kWh (energy per day per home)
+For 10 low-energy lights - 0.5 kWh (energy per day per home)
+
+To convert kWh to pounds of CO2, 
+http://www.eia.gov/tools/faqs/faq.cfm?id=74&t=11
+
+Let's say it's 2 lbs of CO2 per kWh. A savings of 4.5 kWh per day x 2 lbs of CO2 per kWh = 9 lbs CO2 per day? Or 3,285 lbs per year?
+
+Have I done this correctly? I really don't know if these numbers make any sense, do you?
+
+Lenni
+
+
+
+On Feb 14, 2014, at 11:03 AM, Sam Christy wrote:
+
+> Hey Lenni and Eric,
+> 
+> When I think about where to best put my efforts to encourage people to reduce
+> their carbon, I keep coming back to flying, and I come back to you both as my
+> only two confirmed non-flying compatriots.
+> 
+> Flying combines a perfect high cost and low need. There is only so much we can
+> reduce our basic necessities. We need to drive to get to our jobs. We need to
+> eat food to stay alive. We need to heat our homes to stay warm. We don't need
+> to fly. 
+> 
+> In addition, the evidence is so stark and the people in our local community are
+> so primed. My sense is that people really want to fly and so make an effort to
+> avoid the issue, but when I do raise it, particularly with young people who you
+> think would already know, they are moved and often convinced.
+> 
+> The idea is a simple advertising campaign with billboards and ads in bus
+> shelters. The purpose would be to make comparisons between what you are
+> realistically likely to cut in your daily consumption versus what you could cut
+> by simply not flying.
+> 
+> The following are drafts of some possible poster text. The numbers definitely
+> need work.
+> 
+> Change 10 light bulbs      150 pounds 
+> Don't fly to California    4100 pounds
+> 
+> Commute by bus             2100 pounds
+> Don't fly to Spain         4200 pounds
+> 
+> Use less hot water         500 pounds
+> Don't fly to France 	   5200 pounds 
+> 
+> Cut electricity use by 10%  1300 pounds
+> Don't fly to China          6100 pounds 
+
+Adjust your thermostat          1000 pounds
+Don't fly to Tokyo              5700 pounds
+
+Shorten your shower             350 pounds
+Don't fly to Paris              3200 pounds
+
+Reuse a coffee mug              130 pounds
+Don't fly to LA                 2300 pounds
+http://www.clackamas.us/sustainability/tips.html
+
+Use low flow shower head        350 pounds
+Don't fly to Moscow             4100 pounds
+http://environment.about.com/od/globalwarming/tp/globalwarmtips.htm
+
+Recycle paper                   300 pounds
+Don't fly to Amsterdam          3200 pounds
+http://www.countdownyourcarbon.org/our-assumptions.html
+
+Use a clothes line              700 pounds
+Don't fly to Frankfurt          3500 pounds
+
+Insulate your walls	and ceilings  2000 pounds
+Don't fly to Sydney               8200 pounds
+
+Carpool                         1600 pounds
+Don't fly to Singapore          7800 pounds
+http://lightbulbs.org/50-ways-to-conserve-energy/
+
+Reduce your driving             900 pounds
+Don't fly to Beijing            5700 pounds
+http://www.earthmatelighting.com/fight-global-warming.php
+ 
+Inflate your tires              250 pounds
+Don't fly to Mexico City        2000 pounds
+
+Replace three lightbulbs        300 pounds
+Don't fly to London             3100 pounds
+
+Reduce garbage                  1000 pounds
+Don't fly to Hong Kong          6700 pounds
+
+Use a push mower                80 pounds
+Don't fly to Las Vegas          2200 pounds
+
+Turn off your computer          200 pounds
+Don't fly to Mardid             3200 pounds
+http://www.stopglobalwarming.org/take-action/action-items/
+
+
+
+
+> The following is a link to my posters which take different tack.
+> http://www.artnotoil.org.uk/artwork/album-art-not-oil-2011-13/climate-flights-sam-christy
+> 
+> Let me know your thoughts.
+> Best,
+> Sam
+> 
+
+
+----- End forwarded message -----
