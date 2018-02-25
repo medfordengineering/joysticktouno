@@ -1,22 +1,36 @@
 from tkinter import *
+from tkinter import messagebox
 import pygame
 import requests
 
-pygame.init()
-pygame.joystick.init()
-controller = pygame.joystick.Joystick(0)
-controller.init()
 root = Tk()
 
 joy_values = []
+bat_values = []
+controller = None
+
+def joy_start():
+	global controller
+	pygame.init()
+	pygame.joystick.init()
+	if pygame.joystick.get_count():
+		controller = pygame.joystick.Joystick(0)
+		messagebox.showinfo("Connect", controller.get_name())
+		controller.init()
+		update_joystick()
+	else:
+		messagebox.showwarning("Error", "No Joystick Found!")
+		if controller != None:
+			controller.quit()
+		pygame.quit()
 
 def joyFormat(value):
     value = (value * 100) + 100
     value = int(value)
     return value
 
-def update_joystick():
-	global joy_values
+def update_joystick():	
+	global joyStop
 	joyKeys = ['LV', 'LH', 'RV', 'RH']
 	butKeys = ['B1', 'B2', 'B3', 'B4']
 	senValues = ['0','0','0','0']
@@ -46,12 +60,12 @@ def update_joystick():
 
 	for x in range (0, 4):
 		print (senValues[x])
+		bat_values[x].configure(text = senValues[x])
 		senValues[x] = ""
 
-	root.after(100, update_joystick)
+	joyStop = root.after(100, update_joystick)
 
 def create_bat_panel():
-	bat_values = []
 	for num in range(4):
 		bat_label = Label(root, text= "Cell_" + str(num))
 		bat_label.grid(row=1, column=num, padx=10)
@@ -72,8 +86,7 @@ def create_temp_panel():
 		temp_values.append(temp_value)
 
 def create_joy_panel():
-	joy_labels = ['Left_X', 'Left_Y','Right_X','Right_X']
-#	joy_values = []
+	joy_labels = ['Left_X', 'Left_Y','Right_X','Right_Y']
 	for num in range(4):
 		joy_label = Label(root, text= joy_labels[num])
 		joy_label.grid(row=7, column=num, padx=10)
@@ -82,24 +95,42 @@ def create_joy_panel():
 		joy_value.configure(borderwidth = 1, relief=SUNKEN, padx=8)
 		joy_values.append(joy_value)
 
+def create_menu():
+	menubar = Menu(root)
+	filemenu = Menu(menubar, tearoff=0)
+	filemenu.add_command(label="Start", command=joy_start)
+	filemenu.add_command(label="Stop", command=stop_joy)
+	filemenu.add_command(label="Quit", command=close_window)
+	menubar.add_cascade(label="File", menu=filemenu)
+
+	root.config(menu=menubar)
+
+def close_window():
+	controller.quit()
+	pygame.quit()
+	root.quit()
+
+def stop_joy():
+	controller.quit()
+	pygame.quit()
+	root.after_cancel(joyStop)
+
 def main():
-#	pygame.init()
-#	pygame.joystick.init()
-#	controller = pygame.joystick.Joystick(0)
-#	controller.init()
-#	root = Tk()
 	root.geometry("600x400")
-	Label(root, text="Battery Cell Voltage Levels").grid(row=0, column=0, columnspan=4)
-	Label(root, text="Temperature Zones Farhenheit").grid(row=3, column=0, columnspan=5)
-	Label(root, text="Joystick Values").grid(row=6, column=0, columnspan=5)
+	root.title("ROV Controler")
+	Label(root, text="Battery Cell Voltage Levels").grid(row=0,
+	column=1, columnspan=3, sticky=W )
+	Label(root, text="Temperature Zones Farhenheit").grid(row=3,
+	column=1, columnspan=3, sticky=W)
+	Label(root, text="Joystick Values").grid(row=6, column=1,
+	columnspan=3,sticky=W)
+
+	create_menu()
 	create_bat_panel()
 	create_temp_panel()
 	create_joy_panel()
-	update_joystick()
 
 	root.mainloop()
-#update_count()
-#create_text()
 
 if __name__=="__main__":
 	main()
