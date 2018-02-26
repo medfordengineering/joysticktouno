@@ -15,7 +15,7 @@ def joy_start():
 	pygame.joystick.init()
 	if pygame.joystick.get_count():
 		controller = pygame.joystick.Joystick(0)
-		messagebox.showinfo("Connect", controller.get_name())
+		messagebox.showinfo("Connected", controller.get_name())
 		controller.init()
 		update_joystick()
 	else:
